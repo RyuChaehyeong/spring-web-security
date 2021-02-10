@@ -22,10 +22,13 @@
 		<div class="container">
 			<form action="/login" method="post">
 				<div class="form-group">
-					아이디 <input type="text" name="username" value="admin" class="form-control" id="exampleInputEmail1">
+					아이디 <input type="text" name="username" class="form-control" id="exampleInputEmail1">
 				</div>
 				<div class="form-group">
-					비밀번호 <input type="password" name="password" value="admin" class="form-control" />
+					비밀번호 <input type="password" name="password" class="form-control" />
+				</div>
+				<div>
+					<input type="checkbox" name="remember-me"> 자동 로그인
 				</div>
 				
 				<input type="hidden" name="${_csrf.parameterName }" value="${_csrf.token }"/>
